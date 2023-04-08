@@ -1,4 +1,4 @@
-This is a simple c++ program that reads and displays all of the png file chunk.
+This is a simple c++ program that reads and displays all of the png file chunks.
 
 Nothing special needed for compilation.
 
