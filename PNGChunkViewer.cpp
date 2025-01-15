@@ -8,6 +8,9 @@ union char_int{
 	int b;
 };
 #ifdef __linux__
+void getCorrectByteOrder(char*,const size_t size){
+}
+#else
 void getCorrectByteOrder(char *a,const size_t size){
 	for(int i=0;i<size/2;i++){
 		char tmp;
@@ -16,8 +19,6 @@ void getCorrectByteOrder(char *a,const size_t size){
 		a[size-i-1] = tmp;
 	}
 }
-#else
-void getCorrectByteOrder(char*1,const size_t size);
 #endif
 
 string typeToHigher(char *a);
